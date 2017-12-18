@@ -7,5 +7,4 @@ lib_for_all {
   git_branch = 'master'
   git_credential= 'dfcb9625-ba09-4988-a1e3-e325d04804ce'
   name = 'cvonesch'
-  nexus = 'true'
 }
