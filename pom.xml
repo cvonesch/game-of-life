@@ -29,6 +29,33 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.amashchenko.maven.plugin</groupId>
+                <artifactId>gitflow-maven-plugin</artifactId>
+                <version>1.8.0</version>
+                <configuration>
+                    <mvnExecutable>/usr/local/apache-maven-3.3.9/bin/mvn</mvnExecutable>
+                    <gitExecutable>/usr/bin/git</gitExecutable>
+                    <!-- <installProject>false</installProject> -->
+                    <!-- <verbose>true</verbose> -->
+                    <!-- <fetchRemote>false</fetchRemote> -->
+                    <!-- <gitFlowConfig> -->
+                        <!-- <productionBranch>master</productionBranch> -->
+                        <releaseBranch>release</releaseBranch>
+                        <!-- <developmentBranch>develop</developmentBranch> -->
+                        <!-- <featureBranchPrefix>feature/</featureBranchPrefix> -->
+                        <!-- <releaseBranchPrefix>release/</releaseBranchPrefix> -->
+                        <!-- <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix> -->
+                        <!-- <supportBranchPrefix>support/</supportBranchPrefix> -->
+                        <!-- <versionTagPrefix></versionTagPrefix> -->
+                        <!-- <origin>origin</origin> -->
+                    <!-- </gitFlowConfig> -->
+                    <commitMessages>
+                        <releaseStartMessage>update versions for release</releaseStartMessage>
+                        <releaseFinishMessage>update for next development version</releaseFinishMessage>
+                    </commitMessages>
+                </configuration>
+            </plugin>
+            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
