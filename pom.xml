@@ -35,7 +35,7 @@
                 <configuration>
                     <mvnExecutable>/usr/local/apache-maven-3.3.9/bin/mvn</mvnExecutable>
                     <gitExecutable>/usr/bin/git</gitExecutable>
-                    <gitFlowConfig>
+                    <!-- <gitFlowConfig>
                         <productionBranch>master</productionBranch>
                         <developmentBranch>develop</developmentBranch>
                         <featureBranchPrefix>feature/</featureBranchPrefix>
@@ -44,7 +44,7 @@
                         <supportBranchPrefix>support/</supportBranchPrefix>
                         <versionTagPrefix></versionTagPrefix>
                         <origin>origin</origin>
-                    </gitFlowConfig>
+                    </gitFlowConfig> -->
                     <commitMessages>
                         <releaseStartMessage>update versions for release</releaseStartMessage>
                         <releaseFinishMessage>update for next development version</releaseFinishMessage>
